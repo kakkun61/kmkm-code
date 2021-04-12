@@ -1,0 +1,30 @@
+{
+    "name": "kmkm",
+    "displayName": "Kmkm Language",
+    "description": "Syntax highlight for Kmkm language",
+    "author": "岡本和樹 (Kazuki Okamoto)",
+    "license": "GPL-3.0-only",
+    "bugs": {
+      "url": "https://github.com/kakkun61/kmkm-code/issues"
+    },
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.55.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "kmkm",
+            "aliases": ["Kmkm", "kmkm"],
+            "extensions": [".s.km"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "kmkm",
+            "scopeName": "source.kmkm",
+            "path": "./syntaxes/kmkm.tmLanguage.json"
+        }]
+    }
+}
