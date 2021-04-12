@@ -3,7 +3,12 @@
     "displayName": "Kmkm Language",
     "description": "Syntax highlight for Kmkm language",
     "author": "岡本和樹 (Kazuki Okamoto)",
+    "publisher": "kakkun61",
     "license": "GPL-3.0-only",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/kakkun61/kmkm-code.git"
+    },
     "bugs": {
       "url": "https://github.com/kakkun61/kmkm-code/issues"
     },

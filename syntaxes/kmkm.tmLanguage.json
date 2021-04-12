@@ -3,22 +3,14 @@
   "name": "Kmkm",
   "patterns": [
     {
-      "include": "#keywords"
+      "name": "keyword.other.kmkm",
+      "match": "\\b(module|define|list)\\b"
     },
     {
-      "include": "#strings"
-    }
-  ],
-  "repository": {
-    "keywords": {
-      "patterns": [
-        {
-          "name": "keyword.control.kmkm",
-          "match": "\\b(if|while|for|return)\\b"
-        }
-      ]
+      "name": "variable.other.kmkm",
+      "match": "('module'|'define'|'list')"
     },
-    "strings": {
+    {
       "name": "string.quoted.double.kmkm",
       "begin": "\"",
       "end": "\"",
@@ -28,7 +20,11 @@
           "match": "\\\\."
         }
       ]
+    },
+    {
+      "name": "string.quoted.single.kmkm",
+      "match": "'(\\\\'|\\\\\\\\|[^\\\\])'"
     }
-  },
+  ],
   "scopeName": "source.kmkm"
 }
