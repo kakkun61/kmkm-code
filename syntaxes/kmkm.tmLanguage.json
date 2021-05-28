@@ -24,6 +24,10 @@
     {
       "name": "string.quoted.single.kmkm",
       "match": "'(\\\\'|\\\\\\\\|[^\\\\])'"
+    },
+    {
+      "name": "constant.numeric.kmkm",
+      "match": "\\b([0-9]+(\\.[0-9]*)?|0b[01]+|0o[0-7]+|0x[0-9a-f]+((\\.[0-9a-f]*)?(p-?[0-9]+)?)?)\\b"
     }
   ],
   "scopeName": "source.kmkm"
