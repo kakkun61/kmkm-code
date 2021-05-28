@@ -6,11 +6,11 @@
     "publisher": "kakkun61",
     "license": "GPL-3.0-only",
     "repository": {
-      "type": "git",
-      "url": "https://github.com/kakkun61/kmkm-code.git"
+        "type": "git",
+        "url": "https://github.com/kakkun61/kmkm-code.git"
     },
     "bugs": {
-      "url": "https://github.com/kakkun61/kmkm-code/issues"
+        "url": "https://github.com/kakkun61/kmkm-code/issues"
     },
     "version": "0.0.1",
     "engines": {
@@ -20,16 +20,32 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "kmkm",
-            "aliases": ["Kmkm", "kmkm"],
-            "extensions": [".s.km"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "kmkm",
-            "scopeName": "source.kmkm",
-            "path": "./syntaxes/kmkm.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "kmkm",
+                "aliases": [
+                    "Kmkm",
+                    "kmkm"
+                ],
+                "extensions": [
+                    ".s.km"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "kmkm",
+                "scopeName": "source.kmkm",
+                "path": "./syntaxes/kmkm.tmLanguage.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "vsce": "^1.88.0"
+    },
+    "scripts": {
+      "package": "vsce package",
+      "publish": "vsce publish"
     }
 }
