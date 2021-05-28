@@ -4,11 +4,11 @@
   "patterns": [
     {
       "name": "keyword.other.kmkm",
-      "match": "\\b(module|define|list)\\b"
+      "match": "\\b(module|define|list|bind|function|function1|procedure|apply|var)\\b"
     },
     {
       "name": "variable.other.kmkm",
-      "match": "('module'|'define'|'list')"
+      "match": "('module'|'define'|'list'|'bind'|'function'|'function1'|'procedure'|'apply'|'var')"
     },
     {
       "name": "string.quoted.double.kmkm",
